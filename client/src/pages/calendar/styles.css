@@ -1,0 +1,223 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    background-color: #f5f1ed;
+    height: 100vh;
+}
+
+.wrapper1 {
+    height: 75vh;
+}
+
+.calendarWrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.calWrapper {
+    position: relative;
+    margin: 50px auto;
+    background-color: #f5f1ed;
+    height: 100%;
+    width: 90%;
+    /*border: 3px solid #122A41;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*border-radius: 10px;*/
+}
+
+.calWrapper .weekday {
+    width: 20%;
+    border-right: 1px solid #122A41;
+    border-left: 1px solid #122A41;
+}
+
+.calWrapper .weekday.fri{
+    border-right: 0px;
+}
+
+.calWrapper .weekday .day-header {
+    height: 7%;
+    border-bottom: .5px solid #122A41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #b4c8db;*/
+}
+
+.calWrapper .weekday .day-header p{
+    margin: 0;
+    padding: 0;
+}
+
+.calWrapper .time-slot{
+    width: 8%;
+    border-right: 1px solid #122A41;
+}
+
+.calWrapper .time-slot .day-header{
+    height: 7%;
+    border-bottom: .5px solid #122A41;
+    /*background-color: #b4c8db;*/
+    background-color: #f5f1ed;
+}
+
+.calWrapper .time-slot ul {
+    display: flex; /* maybe delete */
+    flex-direction: column;
+    /*height: 600px;*/
+    /*height: calc(100% - 7.5px);*/
+    height: 100%;
+}
+
+.calWrapper .time-slot ul li{
+    border-bottom: .5px solid #122A41;
+    list-style: none;
+    /*height: 40px;*/
+    height: calc((93% / 15) - 0.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calWrapper .time-slot ul .last-time{
+    border-bottom: 0px solid #122A41;
+}
+
+.calWrapper .weekday .times {
+    display: flex;
+    flex-direction: column;
+    /*height: calc(100% - 7.5px);*/
+    height: 100%;
+}
+
+.calWrapper .weekday .times li {
+    border-bottom: .5px solid #122A41;
+    list-style: none;
+    /*height: 46px;*/
+    height: calc((93% / 15) - 0.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calWrapper .weekday .times .nine-pm {
+    border: none;
+}
+
+.event-container {
+    position: absolute;
+    height: 93%;
+    width: 18.5%;
+}
+
+
+.event-container li {
+    position: absolute;
+    list-style: none;
+    height: calc((((93% / 15) - 0.5px) * var(--duration)) + 5px);
+    width: 80%;
+    top: calc((var(--start) - 7) * ((93% / 14)));
+    left: 0;
+    right: 0;
+    background-color: #ffd57e;
+    /*border: 1px solid #e5e5e5;*/
+    border-radius: 4px;
+    padding: 0px 4px;
+    margin: 0 auto;
+    box-shadow: 0px .5px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.event-container li .eventNameTime {
+    font-size: 16px;
+    margin: 5px auto;
+    
+}
+
+.event-container li:hover {
+    cursor: pointer;
+}
+
+.desc-box {
+    z-index: 99;
+    position: absolute;
+    top: calc((var(--start) - 7) * ((93% / 14)));
+    left: 100%;
+    width: 140%;
+    max-width: 250px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    animation: fadeIn .5s;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.desc-box-right {
+    z-index: 99;
+    position: absolute;
+    top: calc((var(--start) - 7) * ((93% / 14)));
+    right: 100%;
+    width: 140%;
+    max-width: 250px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    animation: fadeIn .5s;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.desc-box .close-button {
+    margin: 10px 0 2px 85%;
+}
+
+.desc-box .eventName {
+    width: 75%;
+    margin: 0 0 5px 15px;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid #6884a1;
+}
+
+.desc-box .desc-text {
+    margin: 0 0 5px 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.desc-box-right .close-button {
+    margin: 10px 0 2px 85%;
+}
+
+.desc-box-right .eventName {
+    width: 75%;
+    margin: 0 0 5px 15px;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid #6884a1;
+}
+
+.desc-box-right .desc-text {
+    margin: 0 0 5px 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+
+

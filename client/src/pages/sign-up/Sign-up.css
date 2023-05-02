@@ -1,0 +1,11 @@
+.Sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.initialWrapper {
+
+}

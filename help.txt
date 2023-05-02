@@ -1,0 +1,39 @@
+Starter Information
+	- client: React.js frontend
+	- main: flask backend
+	
+	To Run,
+	
+	1. Open up terminal in PyCharm
+	2. type python main/Template.py, you can also cd to main and use flask --app Template.py run
+	3. Right click local tab and select split
+	4. type cd client
+	5. type npm start
+
+	
+	
+	
+Running Application FAQ
+
+	React or Flask are not pulling from each other
+		- Restart frontend server by typing Ctrl + C then npm start
+		- Restart backend server by typing Ctrl + C then python main/Templates.py
+
+	Flask returns NOT FOUND
+		- the example file stores data in /data so add /data at the end of server
+		- ex. 127.0.0.1:5000/data
+
+Routing
+	Make sure you have installed react-router-dom
+		$ npm install react-router-dom
+	1. In App.js and between <Routes> add your page
+		<Route path="/YOUR PATH" element={<YOUR APP FILE />} />
+	2. Import your App file at the top of the page
+		ex. import AppCal from "./calendar/AppCal";
+	3. In Navbar <Link to="YOUR PATH">YOUR LINK TEXT</Link>
+	
+Building your User Story (React)
+	- Organize your files by placing all related js files in the same folder
+	- Importing .js files other files outside your code will automatically create pathname
+		- Due to this avoid duplicate naming files 
+		

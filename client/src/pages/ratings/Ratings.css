@@ -1,0 +1,342 @@
+.wrapper {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.leftContainer {
+    margin-left: 10px;
+    width: 50%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.twoSection {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.twoSection .searchContainerR {
+    height: calc((100vh - 130px)/2);
+    width: 50%;
+    /*border: 1px solid black;*/
+    margin: auto 0;
+}
+
+.twoSection .searchContainerR .subSearch {
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 10px solid #ffd57e;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.dataResultR {
+    height: 25vh;
+}
+
+.twoSection .searchContainerR .subSearch .searchBar {
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.twoSection .searchContainerR .subSearch .searchBar .professor {
+    background-color: white;
+}
+
+.twoSection .searchContainerR .subSearch .searchBar .professor:hover {
+    cursor: pointer;
+}
+
+.twoSection .searchContainerR .subSearch .searchBar .professor p {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.twoSection .searchContainerR .subSearch .searchBar .searchInputs input{
+    padding: 5px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.twoSection .ratingsWrapper {
+    height: calc((100vh - 130px)/2);
+    width: 50%;
+}
+.twoSection .ratingsWrapper .subRatings {
+    border-top: 10px solid #ffd57e;
+    border-radius: 10px;
+    background-color: white;
+    height: 90%;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.twoSection .ratingsWrapper .selectedProfContainer h3 {
+    padding-top: 18px;
+    font-size: 26px;
+}
+
+.twoSection .ratingsWrapper .selectedProfContainer p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffd57e;
+}
+
+
+.twoSection .ratingsWrapper .courseBox .subCourseBox {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+}
+
+.twoSection .ratingsWrapper .courseBox .subCourseBox:hover{
+    cursor: pointer;
+}
+
+.twoSection .ratingsWrapper .courseBox .subCourseBox p {
+    margin: 0;
+    padding: 10px;
+}
+
+.twoSection .ratingsWrapper .courseBox p {
+    font-size: 18px;
+}
+
+.oneSection {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    padding: 0;
+    /*margin-left: -1%;*/
+}
+
+.formWrapper {
+    height: calc((100vh - 150px)/2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top: 10px solid #ffd57e;
+    margin-left: 2.5%;
+
+}
+
+.formWrapper .subForm {
+    width: 75%;
+    height: 90%;
+    text-align: left;
+    margin: 0;
+}
+
+.formWrapper .subForm h3 {
+    font-size: 26px;
+}
+
+.formWrapper .subForm .courseNum {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.formWrapper .subForm .courseNum p {
+    margin-top: 10px;
+}
+
+
+
+.formWrapper .subForm textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    max-height: 75px;
+}
+
+.formWrapper .subForm form {
+    display: block;
+    margin: 0;
+}
+
+.formWrapper .subForm form .profRatingTitle {
+    font-size: 18px;
+}
+
+.formWrapper .subForm form p {
+    font-size: 18px;
+}
+
+.formWrapper .subForm form button {
+    margin-top: 10px;
+}
+
+
+.rightContainer {
+    margin-top: 0;
+    width: 50%;
+    height: 87.5vh;
+}
+
+.viewComments {
+    position: relative;
+    height: 87.5vh;
+    /*border: 1px solid black;*/
+    background: transparent;
+}
+
+.scrollWrapper{
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.subScroll {
+  position: relative;
+  max-height: 100%;
+  overflow: auto;
+}
+.scrollBox {
+    height:auto;
+}
+
+.scrollBox ul li {
+    list-style: none;
+}
+
+.userRating {
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    margin: 10px auto;
+    text-align: left;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-left: 7px solid #6884a1;
+}
+
+.userRating .topUserRating {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.userRating h3 {
+    margin: 10px 0 0 15px
+}
+
+.userRating h5 {
+    margin: 5px 0 0 15px
+}
+
+.userRating .rightUserRating {
+    margin: 15px 25px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.userRating .rightUserRating .rankbox {
+    width: 55px;
+    height: 55px;
+    border: 1px solid white;
+    margin-right: 10px;
+    /*background-color: #006600;*/
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userRating .rightUserRating .rankbox .rating {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+}
+
+.userRating .rightUserRating .rankContainer .boxTitle {
+    margin: 1px 4px;
+    font-size: 12px;
+    width: 50px;
+    text-align: center;
+}
+
+.userRating p {
+    margin: 10px 0 0 15px;
+    font-size: 16px;
+}
+
+
+/* Button CSS */
+.button-48 {
+  border-radius: 5px;
+  appearance: none;
+  border: 1px solid #EBEBEB;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Pydoc: module Social_Calender</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="pydoc_data/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style='float:left'>
+                Python 3.10.11 [tags/v3.10.11:7d4cc5a, MSC v.1929 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style='float:right'>
+                <div style='text-align:center'>
+                  <a href="index.html">Module Index</a>
+                  : <a href="topics.html">Topics</a>
+                  : <a href="keywords.html">Keywords</a>
+                </div>
+                <div>
+                    <form action="get" style='display:inline;'>
+                      <input type=text name=key size=15>
+                      <input type=submit value="Get">
+                    </form>&nbsp;
+                    <form action="search" style='display:inline;'>
+                      <input type=text name=key size=15>
+                      <input type=submit value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Social_Calender</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cfufu1%5Cdocuments%5Cgithub%5Ccsc450-sp23-project-team-3%5Csocial_calender.py">c:\users\fufu1\documents\github\csc450-sp23-project-team-3\social_calender.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-add_rating"><strong>add_rating</strong></a>()</dt></dl>
+ <dl><dt><a name="-add_user_class"><strong>add_user_class</strong></a>()</dt><dd><tt>Adds&nbsp;a&nbsp;class&nbsp;for&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Request&nbsp;Body:<br>
+-&nbsp;userid&nbsp;(int):&nbsp;The&nbsp;ID&nbsp;of&nbsp;the&nbsp;user<br>
+-&nbsp;email&nbsp;(str):&nbsp;The&nbsp;email&nbsp;address&nbsp;of&nbsp;the&nbsp;user<br>
+-&nbsp;classNum&nbsp;(str):&nbsp;The&nbsp;course&nbsp;number&nbsp;of&nbsp;the&nbsp;class<br>
+-&nbsp;subject&nbsp;(str):&nbsp;The&nbsp;subject&nbsp;of&nbsp;the&nbsp;class<br>
+-&nbsp;section&nbsp;(str):&nbsp;The&nbsp;section&nbsp;of&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Returns:<br>
+A&nbsp;JSON&nbsp;object&nbsp;containing&nbsp;a&nbsp;message&nbsp;indicating&nbsp;whether&nbsp;the&nbsp;class&nbsp;was&nbsp;added&nbsp;successfully&nbsp;or&nbsp;not.</tt></dd></dl>
+ <dl><dt><a name="-change_password"><strong>change_password</strong></a>()</dt><dd><tt>Changes&nbsp;the&nbsp;password&nbsp;for&nbsp;the&nbsp;current&nbsp;user&nbsp;with&nbsp;the&nbsp;given&nbsp;new&nbsp;password.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;Dictionary&nbsp;containing&nbsp;the&nbsp;message&nbsp;"Password&nbsp;updated&nbsp;successfully."<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Unauthorized:&nbsp;If&nbsp;there&nbsp;is&nbsp;no&nbsp;current&nbsp;user&nbsp;logged&nbsp;in.</tt></dd></dl>
+ <dl><dt><a name="-current_user_ratings"><strong>current_user_ratings</strong></a>()</dt><dd><tt>#&nbsp;Gets&nbsp;the&nbsp;current&nbsp;user&nbsp;email&nbsp;and&nbsp;returns&nbsp;as&nbsp;a<br>
+#&nbsp;string&nbsp;(same&nbsp;as&nbsp;the&nbsp;get_current_user,<br>
+#&nbsp;but&nbsp;since&nbsp;that&nbsp;returns&nbsp;as&nbsp;json,&nbsp;so&nbsp;had&nbsp;to&nbsp;make&nbsp;a&nbsp;new&nbsp;function<br>
+#&nbsp;to&nbsp;call&nbsp;in&nbsp;the&nbsp;add&nbsp;rating&nbsp;for&nbsp;the&nbsp;current&nbsp;user&nbsp;email).</tt></dd></dl>
+ <dl><dt><a name="-get_all_users"><strong>get_all_users</strong></a>()</dt><dd><tt>Retrieves&nbsp;all&nbsp;users.<br>
+&nbsp;<br>
+Returns:<br>
+A&nbsp;JSON&nbsp;object&nbsp;containing&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;representing&nbsp;each&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-get_classes"><strong>get_classes</strong></a>()</dt><dd><tt>Retrieves&nbsp;all&nbsp;classes&nbsp;from&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;List&nbsp;of&nbsp;dictionaries&nbsp;containing&nbsp;class&nbsp;details.</tt></dd></dl>
+ <dl><dt><a name="-get_current_user"><strong>get_current_user</strong></a>()</dt><dd><tt>Gets&nbsp;the&nbsp;current&nbsp;user's&nbsp;ID,&nbsp;email,&nbsp;first&nbsp;name,&nbsp;and&nbsp;last&nbsp;name.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;Dictionary&nbsp;containing&nbsp;the&nbsp;current&nbsp;user's&nbsp;ID,&nbsp;email,&nbsp;first&nbsp;name,&nbsp;and&nbsp;last&nbsp;name.</tt></dd></dl>
+ <dl><dt><a name="-get_professors"><strong>get_professors</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_ratings"><strong>get_ratings</strong></a>()</dt></dl>
+ <dl><dt><a name="-get_time"><strong>get_time</strong></a>()</dt><dd><tt>#&nbsp;Route&nbsp;for&nbsp;seeing&nbsp;a&nbsp;data</tt></dd></dl>
+ <dl><dt><a name="-get_user_classes"><strong>get_user_classes</strong></a>(email)</dt><dd><tt>Retrieves&nbsp;all&nbsp;classes&nbsp;for&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Parameters:<br>
+-&nbsp;email&nbsp;(str):&nbsp;The&nbsp;email&nbsp;address&nbsp;of&nbsp;the&nbsp;user<br>
+&nbsp;<br>
+Returns:<br>
+A&nbsp;JSON&nbsp;object&nbsp;containing&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;representing&nbsp;each&nbsp;class&nbsp;for&nbsp;the&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-get_user_friends"><strong>get_user_friends</strong></a>()</dt><dd><tt>Retrieves&nbsp;all&nbsp;friends&nbsp;for&nbsp;a&nbsp;user.<br>
+&nbsp;<br>
+Returns:<br>
+A&nbsp;JSON&nbsp;object&nbsp;containing&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;representing&nbsp;each&nbsp;friend&nbsp;for&nbsp;the&nbsp;user.</tt></dd></dl>
+ <dl><dt><a name="-login_user"><strong>login_user</strong></a>()</dt><dd><tt>Logs&nbsp;in&nbsp;a&nbsp;user&nbsp;with&nbsp;the&nbsp;given&nbsp;email&nbsp;and&nbsp;password.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;Dictionary&nbsp;containing&nbsp;the&nbsp;logged-in&nbsp;user's&nbsp;ID&nbsp;and&nbsp;email.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Unauthorized:&nbsp;If&nbsp;the&nbsp;given&nbsp;email&nbsp;and&nbsp;password&nbsp;do&nbsp;not&nbsp;match&nbsp;any&nbsp;users&nbsp;in&nbsp;the&nbsp;database.</tt></dd></dl>
+ <dl><dt><a name="-logout_user"><strong>logout_user</strong></a>()</dt><dd><tt>Logs&nbsp;out&nbsp;the&nbsp;current&nbsp;user.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;"200"</tt></dd></dl>
+ <dl><dt><a name="-register_user"><strong>register_user</strong></a>()</dt><dd><tt>Registers&nbsp;a&nbsp;new&nbsp;user&nbsp;with&nbsp;the&nbsp;given&nbsp;email,&nbsp;password,&nbsp;first&nbsp;name,&nbsp;and&nbsp;last&nbsp;name.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dict:&nbsp;Dictionary&nbsp;containing&nbsp;the&nbsp;new&nbsp;user's&nbsp;ID&nbsp;and&nbsp;email.</tt></dd></dl>
+ <dl><dt><a name="-submit_friend_request"><strong>submit_friend_request</strong></a>()</dt><dd><tt>Submits&nbsp;a&nbsp;friend&nbsp;request&nbsp;for&nbsp;a&nbsp;user.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>app</strong> = &lt;Flask 'Social_Calender'&gt;<br>
+<strong>bcrypt</strong> = &lt;flask_bcrypt.Bcrypt object&gt;<br>
+<strong>course_blueprint</strong> = &lt;Blueprint 'course_blueprint'&gt;<br>
+<strong>db</strong> = &lt;SQLAlchemy&gt;<br>
+<strong>migrate</strong> = &lt;flask_migrate.Migrate object&gt;<br>
+<strong>professor_bp</strong> = &lt;Blueprint 'professor'&gt;<br>
+<strong>ratings_bp</strong> = &lt;Blueprint 'ratings'&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>server_session</strong> = &lt;flask_session.Session object&gt;<br>
+<strong>session</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>x</strong> = datetime.datetime(2023, 4, 10, 23, 13, 38, 475409)</td></tr></table></div>
+</body></html>

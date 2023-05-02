@@ -1,0 +1,101 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.initialWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #122A41;
+}
+
+.initialWrapper .initialForm {
+  width: 40%;
+  height: 60%;
+  background-color: white;
+  border-radius: 15px;
+  border-top: 15px solid #ffd57e;
+}
+
+.initialWrapper .initialForm .initialText  {
+  margin: 25px auto;
+  width: 50%;
+  height: 75%;
+  text-align: left;
+}
+
+.initialWrapper .initialForm .initialText  h2 {
+  border-bottom: 2px solid #ffd57e;
+  width: 100px;
+}
+
+.initialWrapper .initialForm .initialText form {
+  margin-top: 20px;
+}
+
+.initialWrapper .initialForm .initialText form input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #122A41;
+  height: 25px;
+}
+
+.initialWrapper .initialForm .initialText .initialP {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.initialButton {
+  border: none;
+  border: 1px solid #122A41;
+  color: #122A41;
+  background-color: white;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.initialButton:hover {
+  cursor: pointer;
+  background-color: #122A41;
+  transition: .5s;
+  color: white;
+}
+
+.slButton {
+  margin: 15px auto;
+  padding: 10px;
+  border: none;
+  border: 1px solid #122A41;
+  color: #122A41;
+  background-color: white;
+  border-radius: 5px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.slButton:hover {
+  cursor: pointer;
+  background-color: #122A41;
+  transition: .5s;
+  color: white;
+}
+
+.slContainer {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoLarge {
+  margin-top: 15px;
+  width: 250px;
+  height: 100px;
+}
